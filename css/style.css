@@ -962,3 +962,31 @@ textarea {
   color: #0062b9;
   background: var(--yellow);
 }
+
+.box-containers{
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:2rem 0;
+}
+
+.box-containers .box{
+  display: flex !important;
+  height: 20rem;
+  width:26rem;
+  border-radius: 1rem;
+  margin:2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.box-containers .box img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.box-containers .box:hover img{
+  transform: scale(1.2);
+}
